@@ -1,0 +1,1 @@
+"use strict";const e=require("../../common/vendor.js"),o={onLoad(){e.index.setNavigationBarTitle({title:"隐私保护指引"})}},t=e._export_sfc(o,[["render",function(o,t,s,a,r,n){return e.e({a:e.t(n.title),b:e.t(n.date)})}],["__scopeId","data-v-privacy"]]);wx.createPage(t);

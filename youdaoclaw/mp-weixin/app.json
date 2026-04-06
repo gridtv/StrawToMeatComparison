@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/register/register",
+    "pages/messages/messages",
+    "pages/flow/flow",
+    "pages/admin/admin",
+    "pages/index/index",
+    "pages/tasks/tasks",
+    "pages/publish/publish",
+    "pages/profile/profile"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "秸秆变肉信息平台",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#f9fafb"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#2e7d32",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "🏠 首页"
+      },
+      {
+        "pagePath": "pages/tasks/tasks",
+        "text": "📋 任务"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "text": "➕ 发布"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "👤 我的"
+      }
+    ]
+  },
+  "permission": {},
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {}
+}

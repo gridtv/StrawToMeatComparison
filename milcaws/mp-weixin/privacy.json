@@ -1,0 +1,29 @@
+{
+  "privacy": {
+    "contactEmail": "",
+    "contactPhone": "",
+    "contactQQ": "",
+    "contactWeChat": "",
+    "notice": "本小程序致力于湖南秸秆综合利用，促进农业废弃物资源化利用。",
+    "settingPagePath": "/pages/privacy/index",
+    "userAgreementPagePath": "/pages/agreement/index",
+    "privacyDesc": {
+      "privacyVer": "2023.9.15",
+      "ownerInfo": {
+        "name": "湖南秸秆变肉平台"
+      },
+      "internalInfoList": [
+        { "type": "UserInfo", "purpose": "用于用户注册和身份识别" },
+        { "type": "PhoneNumber", "purpose": "用于账号绑定和联系" },
+        { "type": "Location", "purpose": "用于匹配附近的作业区域" }
+      ],
+      "thirdPartyInfoList": [],
+      "collectInfoItemDesc": "我们仅收集完成服务所必需的信息，不会过度收集。",
+      "storeInfo": "您的信息将存储在安全的服务器上，并采取加密措施保护。",
+      "useInfo": "您的信息仅用于秸秆变肉平台的服务提供，包括作业匹配、订单管理、消息通知等。",
+      "shareInfo": "在为您提供服务时，我们可能向相关服务方（如机手、饲料库）提供必要的业务信息。",
+      "deleteInfo": "您可以在小程序内申请删除个人信息。",
+      "feedback": "如有任何问题，请通过小程序内\"消息中心\"联系我们。"
+    }
+  }
+}
