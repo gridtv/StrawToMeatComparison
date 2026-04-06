@@ -1,1 +1,116 @@
-.user-header.data-v-f6c99b7d{background:linear-gradient(135deg,#2e7d32,#43a047);color:#fff;text-align:center;padding:40rpx}.avatar-lg.data-v-f6c99b7d{width:120rpx;height:120rpx;border-radius:50%;background:rgba(255,255,255,.2);line-height:120rpx;text-align:center;font-size:56rpx;font-weight:700;margin:0 auto}.menu-item.data-v-f6c99b7d{display:flex;justify-content:space-between;align-items:center;padding:28rpx 0;border-bottom:2rpx solid #f5f5f5;font-size:30rpx}.menu-item.data-v-f6c99b7d:last-child{border-bottom:none}.arrow.data-v-f6c99b7d{color:#ccc;font-size:36rpx}
+/* ===== Profile Page ===== */
+.profile-page {
+  min-height: 100vh;
+  background: #f5f5f5;
+  padding-bottom: 40rpx;
+}
+
+/* ===== User Header ===== */
+.user-header {
+  background: linear-gradient(135deg, #2e7d32, #43a047);
+  color: #fff;
+  text-align: center;
+  padding: 48rpx 32rpx;
+  margin: 0 0 20rpx;
+  border-radius: 0 0 32rpx 32rpx;
+  box-shadow: 0 8rpx 24rpx rgba(46, 125, 50, 0.3);
+}
+
+.avatar-lg {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60rpx;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 auto 20rpx;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.15);
+}
+
+.user-name {
+  font-size: 40rpx;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8rpx;
+}
+
+.user-meta {
+  font-size: 26rpx;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 16rpx;
+}
+
+.verified-badge {
+  display: inline-flex;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6rpx 20rpx;
+  border-radius: 20rpx;
+}
+
+.badge-text {
+  font-size: 22rpx;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ===== Cards ===== */
+.profile-page .card {
+  margin: 0 20rpx 20rpx;
+  border-radius: 20rpx;
+  padding: 8rpx 28rpx;
+}
+
+/* ===== Menu Items ===== */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28rpx 0;
+  border-bottom: 2rpx solid #f5f5f5;
+  transition: background 0.2s;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item:active {
+  background: #f8f9fa;
+}
+
+.menu-left {
+  display: flex;
+  align-items: center;
+  gap: 20rpx;
+  font-size: 30rpx;
+}
+
+.menu-icon {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 16rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  flex-shrink: 0;
+}
+
+.arrow {
+  color: #ccc;
+  font-size: 36rpx;
+  font-weight: 300;
+}
+
+/* ===== Logout ===== */
+.logout-section {
+  padding: 20rpx;
+}
+
+.logout-section .btn-danger {
+  width: 100%;
+}

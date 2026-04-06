@@ -1,1 +1,96 @@
-<view wx:if="{{a}}" class="container data-v-f6c99b7d"><view class="card user-header data-v-f6c99b7d"><view class="avatar-lg data-v-f6c99b7d">{{b}}</view><view class="text-bold data-v-f6c99b7d" style="font-size:36rpx;margin-top:16rpx">{{c}}</view><view class="text-small data-v-f6c99b7d" style="color:rgba(255,255,255,0.8)">{{d}} | {{e}}</view></view><view class="card data-v-f6c99b7d"><view class="menu-item data-v-f6c99b7d" bindtap="{{f}}"><text class="data-v-f6c99b7d">👤 个人信息</text><text class="arrow data-v-f6c99b7d">›</text></view><view class="menu-item data-v-f6c99b7d" bindtap="{{g}}"><text class="data-v-f6c99b7d">🌾 收割作业单</text><text class="arrow data-v-f6c99b7d">›</text></view><view class="menu-item data-v-f6c99b7d" bindtap="{{h}}"><text class="data-v-f6c99b7d">📦 鲜秸秆贮藏单</text><text class="arrow data-v-f6c99b7d">›</text></view><view class="menu-item data-v-f6c99b7d" bindtap="{{i}}"><text class="data-v-f6c99b7d">🍖 饲料需求单</text><text class="arrow data-v-f6c99b7d">›</text></view><view wx:if="{{j}}" class="menu-item data-v-f6c99b7d" bindtap="{{k}}"><text class="data-v-f6c99b7d">🏭 仓储管理</text><text class="arrow data-v-f6c99b7d">›</text></view><view class="menu-item data-v-f6c99b7d" bindtap="{{l}}"><text class="data-v-f6c99b7d">💬 消息中心</text><text class="arrow data-v-f6c99b7d">›</text></view><view class="menu-item data-v-f6c99b7d" bindtap="{{m}}"><text class="data-v-f6c99b7d">📊 数据统计</text><text class="arrow data-v-f6c99b7d">›</text></view></view><view class="card data-v-f6c99b7d"><view class="menu-item data-v-f6c99b7d" bindtap="{{n}}"><text class="data-v-f6c99b7d">🏠 返回首页</text><text class="arrow data-v-f6c99b7d">›</text></view><view class="menu-item data-v-f6c99b7d" bindtap="{{p}}"><text class="data-v-f6c99b7d">🔒 隐私保护指引</text><text class="arrow data-v-f6c99b7d">›</text></view><view class="menu-item data-v-f6c99b7d" bindtap="{{q}}"><text class="data-v-f6c99b7d">📄 用户服务协议</text><text class="arrow data-v-f6c99b7d">›</text></view></view><button class="btn-danger data-v-f6c99b7d" style="margin:40rpx 20rpx" bindtap="{{o}}">退出登录</button></view>
+<view class="profile-page data-v-f6c99b7d">
+  <view wx:if="{{a}}" class="data-v-f6c99b7d">
+    <!-- User Header Card with Gradient -->
+    <view class="card user-header fade-up data-v-f6c99b7d">
+      <view class="avatar-lg data-v-f6c99b7d">{{b}}</view>
+      <view class="user-name data-v-f6c99b7d">{{c}}</view>
+      <view class="user-meta data-v-f6c99b7d">{{d}} | {{e}}</view>
+      <view class="verified-badge data-v-f6c99b7d">
+        <text class="badge-text data-v-f6c99b7d">已认证</text>
+      </view>
+    </view>
+
+    <!-- Menu Section -->
+    <view class="card fade-up data-v-f6c99b7d" style="animation-delay: 0.1s">
+      <view class="menu-item data-v-f6c99b7d" bindtap="{{f}}">
+        <view class="menu-left data-v-f6c99b7d">
+          <view class="menu-icon data-v-f6c99b7d" style="background:#e8f5e9">👤</view>
+          <text class="data-v-f6c99b7d">个人信息</text>
+        </view>
+        <text class="arrow data-v-f6c99b7d">›</text>
+      </view>
+      <view class="menu-item data-v-f6c99b7d" bindtap="{{g}}">
+        <view class="menu-left data-v-f6c99b7d">
+          <view class="menu-icon data-v-f6c99b7d" style="background:#e3f2fd">🌾</view>
+          <text class="data-v-f6c99b7d">收割作业单</text>
+        </view>
+        <text class="arrow data-v-f6c99b7d">›</text>
+      </view>
+      <view class="menu-item data-v-f6c99b7d" bindtap="{{h}}">
+        <view class="menu-left data-v-f6c99b7d">
+          <view class="menu-icon data-v-f6c99b7d" style="background:#fff3e0">📦</view>
+          <text class="data-v-f6c99b7d">鲜秸秆贮藏单</text>
+        </view>
+        <text class="arrow data-v-f6c99b7d">›</text>
+      </view>
+      <view class="menu-item data-v-f6c99b7d" bindtap="{{i}}">
+        <view class="menu-left data-v-f6c99b7d">
+          <view class="menu-icon data-v-f6c99b7d" style="background:#f3e5f5">🍖</view>
+          <text class="data-v-f6c99b7d">饲料需求单</text>
+        </view>
+        <text class="arrow data-v-f6c99b7d">›</text>
+      </view>
+      <view wx:if="{{j}}" class="menu-item data-v-f6c99b7d" bindtap="{{k}}">
+        <view class="menu-left data-v-f6c99b7d">
+          <view class="menu-icon data-v-f6c99b7d" style="background:#e0f2f1">🏭</view>
+          <text class="data-v-f6c99b7d">仓储管理</text>
+        </view>
+        <text class="arrow data-v-f6c99b7d">›</text>
+      </view>
+      <view class="menu-item data-v-f6c99b7d" bindtap="{{l}}">
+        <view class="menu-left data-v-f6c99b7d">
+          <view class="menu-icon data-v-f6c99b7d" style="background:#e8f5e9">💬</view>
+          <text class="data-v-f6c99b7d">消息中心</text>
+        </view>
+        <text class="arrow data-v-f6c99b7d">›</text>
+      </view>
+      <view class="menu-item data-v-f6c99b7d" bindtap="{{m}}">
+        <view class="menu-left data-v-f6c99b7d">
+          <view class="menu-icon data-v-f6c99b7d" style="background:#e3f2fd">📊</view>
+          <text class="data-v-f6c99b7d">数据统计</text>
+        </view>
+        <text class="arrow data-v-f6c99b7d">›</text>
+      </view>
+    </view>
+
+    <!-- Other Links -->
+    <view class="card fade-up data-v-f6c99b7d" style="animation-delay: 0.2s">
+      <view class="menu-item data-v-f6c99b7d" bindtap="{{n}}">
+        <view class="menu-left data-v-f6c99b7d">
+          <view class="menu-icon data-v-f6c99b7d" style="background:#f5f5f5">🏠</view>
+          <text class="data-v-f6c99b7d">返回首页</text>
+        </view>
+        <text class="arrow data-v-f6c99b7d">›</text>
+      </view>
+      <view class="menu-item data-v-f6c99b7d" bindtap="{{p}}">
+        <view class="menu-left data-v-f6c99b7d">
+          <view class="menu-icon data-v-f6c99b7d" style="background:#fce4ec">🔒</view>
+          <text class="data-v-f6c99b7d">隐私保护指引</text>
+        </view>
+        <text class="arrow data-v-f6c99b7d">›</text>
+      </view>
+      <view class="menu-item data-v-f6c99b7d" bindtap="{{q}}">
+        <view class="menu-left data-v-f6c99b7d">
+          <view class="menu-icon data-v-f6c99b7d" style="background:#e8eaf6">📄</view>
+          <text class="data-v-f6c99b7d">用户服务协议</text>
+        </view>
+        <text class="arrow data-v-f6c99b7d">›</text>
+      </view>
+    </view>
+
+    <!-- Logout Button -->
+    <view class="logout-section fade-up data-v-f6c99b7d" style="animation-delay: 0.3s">
+      <button class="btn-danger data-v-f6c99b7d" bindtap="{{o}}">退出登录</button>
+    </view>
+  </view>
+</view>

@@ -1,1 +1,135 @@
-.login-header.data-v-ad16f7e5{text-align:center;padding:60rpx 0 40rpx}.login-icon.data-v-ad16f7e5{font-size:80rpx}.login-title.data-v-ad16f7e5{font-size:40rpx;font-weight:700;margin-top:10rpx}.login-sub.data-v-ad16f7e5{font-size:26rpx;color:#999;margin-top:10rpx}.user-item.data-v-ad16f7e5{display:flex;align-items:center;justify-content:space-between;padding:16rpx 0;border-bottom:2rpx solid #f5f5f5}.user-item.data-v-ad16f7e5:last-child{border-bottom:none}.avatar-sm.data-v-ad16f7e5{width:64rpx;height:64rpx;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:32rpx}.avatar-sm.green.data-v-ad16f7e5{background:#e8f5e9}.avatar-sm.blue.data-v-ad16f7e5{background:#e3f2fd}.avatar-sm.orange.data-v-ad16f7e5{background:#fff3e0}.avatar-sm.brown.data-v-ad16f7e5{background:#efebe9}
+/* ===== Login Page ===== */
+.login-page {
+  min-height: 100vh;
+  background: #f5f5f5;
+  padding-bottom: 40rpx;
+}
+
+/* ===== Header ===== */
+.login-header {
+  margin-bottom: 20rpx;
+}
+
+.header-bg {
+  background: linear-gradient(135deg, #1b5e20, #2e7d32 40%, #43a047);
+  padding: 80rpx 30rpx 60rpx;
+  text-align: center;
+  border-radius: 0 0 40rpx 40rpx;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-bg::after {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -20%;
+  width: 350rpx;
+  height: 350rpx;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+}
+
+.logo-icon {
+  width: 120rpx;
+  height: 120rpx;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10rpx);
+  border-radius: 24rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24rpx;
+}
+
+.logo-emoji {
+  font-size: 60rpx;
+}
+
+.login-title {
+  font-size: 48rpx;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 2rpx;
+}
+
+.login-sub {
+  font-size: 26rpx;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 12rpx;
+}
+
+/* ===== Cards ===== */
+.login-page .card {
+  margin: 0 20rpx 20rpx;
+  border-radius: 20rpx;
+  padding: 28rpx;
+}
+
+.login-page .card-title {
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 16rpx;
+  padding-bottom: 12rpx;
+  border-bottom: 2rpx solid #f0f0f0;
+}
+
+/* ===== User Items ===== */
+.user-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx 0;
+  border-bottom: 2rpx solid #f8f8f8;
+  transition: background 0.2s;
+}
+
+.user-item:last-child {
+  border-bottom: none;
+}
+
+.user-item:active {
+  background: #f8f9fa;
+  border-radius: 12rpx;
+}
+
+/* ===== Avatars ===== */
+.avatar-sm {
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36rpx;
+  flex-shrink: 0;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.08);
+}
+
+.avatar-sm.green {
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+}
+
+.avatar-sm.blue {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+}
+
+.avatar-sm.orange {
+  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+}
+
+.avatar-sm.brown {
+  background: linear-gradient(135deg, #efebe9, #d7ccc8);
+}
+
+/* ===== Footer ===== */
+.login-footer {
+  text-align: center;
+  padding: 32rpx 20rpx;
+}
+
+.copyright {
+  font-size: 22rpx;
+  color: #bbb;
+}

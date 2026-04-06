@@ -1,1 +1,61 @@
-<view class="container data-v-7d205ddc"><view class="tabs data-v-7d205ddc"><view wx:for="{{a}}" wx:for-item="tab" wx:key="b" class="{{['tab-item', 'data-v-7d205ddc', tab.c && 'active']}}" bindtap="{{tab.d}}">{{tab.a}}</view></view><view wx:for="{{b}}" wx:for-item="order" wx:key="m" class="card order-card data-v-7d205ddc" bindtap="{{order.n}}"><view class="flex-between mb-10 data-v-7d205ddc"><view class="order-no data-v-7d205ddc">{{order.a}}</view><view class="{{['data-v-7d205ddc', order.c]}}">{{order.b}}</view></view><view class="order-info data-v-7d205ddc"><view class="info-row data-v-7d205ddc"><text class="info-label data-v-7d205ddc">作物类型</text><text class="data-v-7d205ddc">{{order.d}}</text></view><view class="info-row data-v-7d205ddc"><text class="info-label data-v-7d205ddc">作业面积</text><text class="data-v-7d205ddc">{{order.e}} 亩</text></view><view class="info-row data-v-7d205ddc"><text class="info-label data-v-7d205ddc">作业地点</text><text class="data-v-7d205ddc">{{order.f}}</text></view><view class="info-row data-v-7d205ddc"><text class="info-label data-v-7d205ddc">作业时段</text><text class="data-v-7d205ddc">{{order.g}}</text></view><view class="info-row data-v-7d205ddc"><text class="info-label data-v-7d205ddc">价格</text><text class="text-primary text-bold data-v-7d205ddc">¥{{order.h}}/亩</text></view><view class="info-row data-v-7d205ddc"><text class="info-label data-v-7d205ddc">种植户</text><text class="data-v-7d205ddc">{{order.i}}</text></view><view wx:if="{{order.j}}" class="info-row data-v-7d205ddc"><text class="info-label data-v-7d205ddc">机手</text><text class="data-v-7d205ddc">{{order.k}}</text></view><view class="info-row data-v-7d205ddc"><text class="info-label data-v-7d205ddc">发布时间</text><text class="text-small text-gray data-v-7d205ddc">{{order.l}}</text></view></view></view><view wx:if="{{c}}" class="empty-state data-v-7d205ddc"><view class="icon data-v-7d205ddc">📋</view><view class="data-v-7d205ddc">暂无{{d}}的收割作业单</view></view><view wx:if="{{e}}" class="fab data-v-7d205ddc" bindtap="{{f}}">+</view></view>
+<view class="order-list-page data-v-7d205ddc">
+  <!-- Tab Bar -->
+  <view class="tabs data-v-7d205ddc">
+    <view wx:for="{{a}}" wx:for-item="tab" wx:key="b" class="{{['tab-item', 'data-v-7d205ddc', tab.c && 'active']}}" bindtap="{{tab.d}}">{{tab.a}}</view>
+  </view>
+
+  <!-- Order Cards -->
+  <view class="order-cards data-v-7d205ddc">
+    <view wx:for="{{b}}" wx:for-item="order" wx:key="m" class="card order-card data-v-7d205ddc" bindtap="{{order.n}}">
+      <!-- Order Header -->
+      <view class="order-header data-v-7d205ddc">
+        <view class="order-no data-v-7d205ddc">{{order.a}}</view>
+        <view class="{{['data-v-7d205ddc', order.c]}}">{{order.b}}</view>
+      </view>
+      <!-- Order Info -->
+      <view class="order-info data-v-7d205ddc">
+        <view class="info-row data-v-7d205ddc">
+          <text class="info-label data-v-7d205ddc">作物类型</text>
+          <text class="data-v-7d205ddc">{{order.d}}</text>
+        </view>
+        <view class="info-row data-v-7d205ddc">
+          <text class="info-label data-v-7d205ddc">作业面积</text>
+          <text class="data-v-7d205ddc">{{order.e}} 亩</text>
+        </view>
+        <view class="info-row data-v-7d205ddc">
+          <text class="info-label data-v-7d205ddc">作业地点</text>
+          <text class="data-v-7d205ddc">{{order.f}}</text>
+        </view>
+        <view class="info-row data-v-7d205ddc">
+          <text class="info-label data-v-7d205ddc">作业时段</text>
+          <text class="data-v-7d205ddc">{{order.g}}</text>
+        </view>
+        <view class="info-row data-v-7d205ddc">
+          <text class="info-label data-v-7d205ddc">价格</text>
+          <text class="text-primary text-bold data-v-7d205ddc">¥{{order.h}}/亩</text>
+        </view>
+        <view class="info-row data-v-7d205ddc">
+          <text class="info-label data-v-7d205ddc">种植户</text>
+          <text class="data-v-7d205ddc">{{order.i}}</text>
+        </view>
+        <view wx:if="{{order.j}}" class="info-row data-v-7d205ddc">
+          <text class="info-label data-v-7d205ddc">机手</text>
+          <text class="data-v-7d205ddc">{{order.k}}</text>
+        </view>
+        <view class="info-row data-v-7d205ddc">
+          <text class="info-label data-v-7d205ddc">发布时间</text>
+          <text class="text-small text-gray data-v-7d205ddc">{{order.l}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- Empty State -->
+  <view wx:if="{{c}}" class="empty-state data-v-7d205ddc">
+    <view class="icon data-v-7d205ddc">📋</view>
+    <view class="data-v-7d205ddc">暂无{{d}}的收割作业单</view>
+  </view>
+
+  <!-- FAB -->
+  <view wx:if="{{e}}" class="fab data-v-7d205ddc" bindtap="{{f}}">+</view>
+</view>

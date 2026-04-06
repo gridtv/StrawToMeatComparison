@@ -1,1 +1,91 @@
-.picker-popup.data-v-d6b6395d{background:#fff;border:2rpx solid #e0e0e0;border-radius:10rpx;margin-top:8rpx}.picker-option.data-v-d6b6395d{padding:20rpx;border-bottom:2rpx solid #f5f5f5;font-size:28rpx}.picker-option.data-v-d6b6395d:last-child{border-bottom:none}
+/* ===== Register Form Pages ===== */
+.picker-popup {
+  background: #fff;
+  border: 2rpx solid #e0e0e0;
+  border-radius: 12rpx;
+  margin-top: 8rpx;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.08);
+}
+
+.picker-option {
+  padding: 22rpx 24rpx;
+  border-bottom: 2rpx solid #f5f5f5;
+  font-size: 28rpx;
+  transition: background 0.2s;
+}
+
+.picker-option:last-child {
+  border-bottom: none;
+}
+
+.picker-option:active {
+  background: #e8f5e9;
+}
+
+/* ===== Form Enhancements ===== */
+.card {
+  border-radius: 20rpx;
+  padding: 32rpx;
+}
+
+.card-title {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 28rpx;
+  padding-bottom: 16rpx;
+  border-bottom: 2rpx solid #f0f0f0;
+}
+
+.form-group {
+  margin-bottom: 28rpx;
+}
+
+.form-label {
+  font-size: 26rpx;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 12rpx;
+  display: block;
+}
+
+.form-input {
+  width: 100%;
+  height: 88rpx;
+  border: 2rpx solid #e0e0e0;
+  border-radius: 12rpx;
+  padding: 0 24rpx;
+  font-size: 28rpx;
+  background: #fafafa;
+  box-sizing: border-box;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.form-input:focus {
+  border-color: #2e7d32;
+  background: #fff;
+}
+
+.form-picker {
+  width: 100%;
+  height: 88rpx;
+  border: 2rpx solid #e0e0e0;
+  border-radius: 12rpx;
+  padding: 0 24rpx;
+  font-size: 28rpx;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.btn-primary {
+  width: 100%;
+  margin-top: 24rpx;
+  padding: 28rpx;
+  font-size: 32rpx;
+  font-weight: 700;
+  border-radius: 16rpx;
+}

@@ -1,1 +1,29 @@
-<view class="container data-v-3d13f047"><view wx:for="{{a}}" wx:for-item="msg" wx:key="f" class="{{['card', 'msg-card', 'data-v-3d13f047', msg.g && 'unread']}}" bindtap="{{msg.h}}"><view class="flex-between mb-10 data-v-3d13f047"><view class="msg-icon data-v-3d13f047">{{msg.a}}</view><view class="text-small text-gray data-v-3d13f047">{{msg.b}}</view></view><view class="text-bold data-v-3d13f047">{{msg.c}}</view><view class="text-small text-gray mt-10 data-v-3d13f047">{{msg.d}}</view><view wx:if="{{msg.e}}" class="unread-dot data-v-3d13f047"></view></view><view wx:if="{{b}}" class="empty-state data-v-3d13f047"><view class="icon data-v-3d13f047">💬</view><view class="data-v-3d13f047">暂无消息</view></view></view>
+<view class="message-page data-v-3d13f047">
+  <!-- Header -->
+  <view class="page-header data-v-3d13f047">
+    <text class="page-title data-v-3d13f047">消息中心</text>
+  </view>
+
+  <!-- Message List -->
+  <view class="message-list data-v-3d13f047">
+    <view wx:for="{{a}}" wx:for-item="msg" wx:key="f" class="{{['card', 'msg-card', 'data-v-3d13f047', msg.g && 'unread']}}" bindtap="{{msg.h}}">
+      <view class="msg-header data-v-3d13f047">
+        <view class="msg-icon data-v-3d13f047">{{msg.a}}</view>
+        <view class="msg-meta data-v-3d13f047">
+          <view class="msg-title-row data-v-3d13f047">
+            <text class="text-bold data-v-3d13f047">{{msg.c}}</text>
+            <text class="text-small text-gray data-v-3d13f047">{{msg.b}}</text>
+          </view>
+          <text class="text-small text-gray mt-10 data-v-3d13f047">{{msg.d}}</text>
+        </view>
+      </view>
+      <view wx:if="{{msg.e}}" class="unread-dot data-v-3d13f047"></view>
+    </view>
+  </view>
+
+  <!-- Empty State -->
+  <view wx:if="{{b}}" class="empty-state data-v-3d13f047">
+    <view class="icon data-v-3d13f047">📭</view>
+    <view class="data-v-3d13f047">暂无消息</view>
+  </view>
+</view>

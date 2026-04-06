@@ -1,1 +1,57 @@
-<view class="container data-v-2641ce51"><view class="card data-v-2641ce51"><view class="card-title data-v-2641ce51">选择您的角色</view><view class="text-gray text-small mb-20 data-v-2641ce51">注册后需等待管理员审核通过</view><view class="role-list data-v-2641ce51"><view class="role-item data-v-2641ce51" bindtap="{{a}}"><view class="role-icon green data-v-2641ce51">🌾</view><view class="role-info data-v-2641ce51"><view class="text-bold data-v-2641ce51">种植户</view><view class="text-small text-gray data-v-2641ce51">发布收割作业单、管理农田作业</view></view><view class="role-arrow data-v-2641ce51">›</view></view><view class="role-item data-v-2641ce51" bindtap="{{b}}"><view class="role-icon blue data-v-2641ce51">🚜</view><view class="role-info data-v-2641ce51"><view class="text-bold data-v-2641ce51">机手</view><view class="text-small text-gray data-v-2641ce51">承接收割、打捆、运输秸秆作业</view></view><view class="role-arrow data-v-2641ce51">›</view></view><view class="role-item data-v-2641ce51" bindtap="{{c}}"><view class="role-icon orange data-v-2641ce51">🏭</view><view class="role-info data-v-2641ce51"><view class="text-bold data-v-2641ce51">微贮饲料库</view><view class="text-small text-gray data-v-2641ce51">承接秸秆贮藏、加工饲料供应</view></view><view class="role-arrow data-v-2641ce51">›</view></view><view class="role-item data-v-2641ce51" bindtap="{{d}}"><view class="role-icon brown data-v-2641ce51">🐄</view><view class="role-info data-v-2641ce51"><view class="text-bold data-v-2641ce51">养殖户</view><view class="text-small text-gray data-v-2641ce51">发布饲料需求、采购饲料养殖</view></view><view class="role-arrow data-v-2641ce51">›</view></view></view></view></view>
+<view class="register-page data-v-2641ce51">
+  <!-- Header -->
+  <view class="register-header data-v-2641ce51">
+    <view class="header-bg data-v-2641ce51">
+      <view class="logo-icon data-v-2641ce51">
+        <text class="logo-emoji data-v-2641ce51">🌾</text>
+      </view>
+      <view class="header-title data-v-2641ce51">新用户注册</view>
+      <view class="header-sub data-v-2641ce51">选择您的角色开始注册</view>
+    </view>
+  </view>
+
+  <!-- Role Selection -->
+  <view class="card fade-up data-v-2641ce51" style="animation-delay: 0.1s">
+    <view class="card-title data-v-2641ce51">选择您的角色</view>
+    <view class="text-gray text-small mb-20 data-v-2641ce51">注册后需等待管理员审核通过</view>
+    <view class="role-list data-v-2641ce51">
+      <view class="role-item data-v-2641ce51" bindtap="{{a}}">
+        <view class="role-icon green data-v-2641ce51">🌾</view>
+        <view class="role-info data-v-2641ce51">
+          <view class="text-bold data-v-2641ce51">种植户</view>
+          <view class="text-small text-gray data-v-2641ce51">发布收割作业单、管理农田作业</view>
+        </view>
+        <view class="role-arrow data-v-2641ce51">›</view>
+      </view>
+      <view class="role-item data-v-2641ce51" bindtap="{{b}}">
+        <view class="role-icon blue data-v-2641ce51">🚜</view>
+        <view class="role-info data-v-2641ce51">
+          <view class="text-bold data-v-2641ce51">机手</view>
+          <view class="text-small text-gray data-v-2641ce51">承接收割、打捆、运输秸秆作业</view>
+        </view>
+        <view class="role-arrow data-v-2641ce51">›</view>
+      </view>
+      <view class="role-item data-v-2641ce51" bindtap="{{c}}">
+        <view class="role-icon orange data-v-2641ce51">🏭</view>
+        <view class="role-info data-v-2641ce51">
+          <view class="text-bold data-v-2641ce51">微贮饲料库</view>
+          <view class="text-small text-gray data-v-2641ce51">承接秸秆贮藏、加工饲料供应</view>
+        </view>
+        <view class="role-arrow data-v-2641ce51">›</view>
+      </view>
+      <view class="role-item data-v-2641ce51" bindtap="{{d}}">
+        <view class="role-icon brown data-v-2641ce51">🐄</view>
+        <view class="role-info data-v-2641ce51">
+          <view class="text-bold data-v-2641ce51">养殖户</view>
+          <view class="text-small text-gray data-v-2641ce51">发布饲料需求、采购饲料养殖</view>
+        </view>
+        <view class="role-arrow data-v-2641ce51">›</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- Footer -->
+  <view class="register-footer data-v-2641ce51">
+    <text class="copyright data-v-2641ce51">© 2026 湖南省农业农村厅 · 秸秆变肉工程</text>
+  </view>
+</view>

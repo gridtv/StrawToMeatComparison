@@ -1,1 +1,77 @@
-<view class="container data-v-ad16f7e5"><view class="login-header data-v-ad16f7e5"><view class="login-icon data-v-ad16f7e5">🐄</view><view class="login-title data-v-ad16f7e5">秸秆变肉平台</view><view class="login-sub data-v-ad16f7e5">请选择测试账号快速登录</view></view><view class="card data-v-ad16f7e5"><view class="card-title data-v-ad16f7e5">🌾 种植户</view><view wx:for="{{a}}" wx:for-item="u" wx:key="g" class="user-item data-v-ad16f7e5" bindtap="{{u.h}}"><view class="flex-row data-v-ad16f7e5" style="align-items:center"><view class="avatar-sm green data-v-ad16f7e5">🌾</view><view class="ml-20 data-v-ad16f7e5"><view class="text-bold data-v-ad16f7e5">{{u.a}}</view><view class="text-small text-gray data-v-ad16f7e5">{{u.b}} | {{u.c}} {{u.d}}亩</view></view></view><view class="{{['tag', 'data-v-ad16f7e5', u.f]}}">{{u.e}}</view></view></view><view class="card data-v-ad16f7e5"><view class="card-title data-v-ad16f7e5">🚜 机手</view><view wx:for="{{b}}" wx:for-item="u" wx:key="f" class="user-item data-v-ad16f7e5" bindtap="{{u.g}}"><view class="flex-row data-v-ad16f7e5" style="align-items:center"><view class="avatar-sm blue data-v-ad16f7e5">🚜</view><view class="ml-20 data-v-ad16f7e5"><view class="text-bold data-v-ad16f7e5">{{u.a}}</view><view class="text-small text-gray data-v-ad16f7e5">{{u.b}} | {{u.c}}</view></view></view><view class="{{['tag', 'data-v-ad16f7e5', u.e]}}">{{u.d}}</view></view></view><view class="card data-v-ad16f7e5"><view class="card-title data-v-ad16f7e5">🏭 饲料库</view><view wx:for="{{c}}" wx:for-item="u" wx:key="f" class="user-item data-v-ad16f7e5" bindtap="{{u.g}}"><view class="flex-row data-v-ad16f7e5" style="align-items:center"><view class="avatar-sm orange data-v-ad16f7e5">🏭</view><view class="ml-20 data-v-ad16f7e5"><view class="text-bold data-v-ad16f7e5">{{u.a}}</view><view class="text-small text-gray data-v-ad16f7e5">{{u.b}} | 容量{{u.c}}吨</view></view></view><view class="{{['tag', 'data-v-ad16f7e5', u.e]}}">{{u.d}}</view></view></view><view class="card data-v-ad16f7e5"><view class="card-title data-v-ad16f7e5">🐄 养殖户</view><view wx:for="{{d}}" wx:for-item="u" wx:key="g" class="user-item data-v-ad16f7e5" bindtap="{{u.h}}"><view class="flex-row data-v-ad16f7e5" style="align-items:center"><view class="avatar-sm brown data-v-ad16f7e5">🐄</view><view class="ml-20 data-v-ad16f7e5"><view class="text-bold data-v-ad16f7e5">{{u.a}}</view><view class="text-small text-gray data-v-ad16f7e5">{{u.b}} | {{u.c}} {{u.d}}头</view></view></view><view class="{{['tag', 'data-v-ad16f7e5', u.f]}}">{{u.e}}</view></view></view></view>
+<view class="login-page data-v-ad16f7e5">
+  <!-- Header with Gradient -->
+  <view class="login-header data-v-ad16f7e5">
+    <view class="header-bg data-v-ad16f7e5">
+      <view class="logo-icon data-v-ad16f7e5">
+        <text class="logo-emoji data-v-ad16f7e5">🐄</text>
+      </view>
+      <view class="login-title data-v-ad16f7e5">秸秆变肉平台</view>
+      <view class="login-sub data-v-ad16f7e5">请选择测试账号快速登录</view>
+    </view>
+  </view>
+
+  <!-- Farmers -->
+  <view class="card fade-up data-v-ad16f7e5" style="animation-delay: 0.05s">
+    <view class="card-title data-v-ad16f7e5">🌾 种植户</view>
+    <view wx:for="{{a}}" wx:for-item="u" wx:key="g" class="user-item data-v-ad16f7e5" bindtap="{{u.h}}">
+      <view class="flex-row data-v-ad16f7e5" style="align-items:center">
+        <view class="avatar-sm green data-v-ad16f7e5">🌾</view>
+        <view class="ml-20 data-v-ad16f7e5">
+          <view class="text-bold data-v-ad16f7e5">{{u.a}}</view>
+          <view class="text-small text-gray data-v-ad16f7e5">{{u.b}} | {{u.c}} {{u.d}}亩</view>
+        </view>
+      </view>
+      <view class="{{['tag', 'data-v-ad16f7e5', u.f]}}">{{u.e}}</view>
+    </view>
+  </view>
+
+  <!-- Drivers -->
+  <view class="card fade-up data-v-ad16f7e5" style="animation-delay: 0.1s">
+    <view class="card-title data-v-ad16f7e5">🚜 机手</view>
+    <view wx:for="{{b}}" wx:for-item="u" wx:key="f" class="user-item data-v-ad16f7e5" bindtap="{{u.g}}">
+      <view class="flex-row data-v-ad16f7e5" style="align-items:center">
+        <view class="avatar-sm blue data-v-ad16f7e5">🚜</view>
+        <view class="ml-20 data-v-ad16f7e5">
+          <view class="text-bold data-v-ad16f7e5">{{u.a}}</view>
+          <view class="text-small text-gray data-v-ad16f7e5">{{u.b}} | {{u.c}}</view>
+        </view>
+      </view>
+      <view class="{{['tag', 'data-v-ad16f7e5', u.e]}}">{{u.d}}</view>
+    </view>
+  </view>
+
+  <!-- Storages -->
+  <view class="card fade-up data-v-ad16f7e5" style="animation-delay: 0.15s">
+    <view class="card-title data-v-ad16f7e5">🏭 饲料库</view>
+    <view wx:for="{{c}}" wx:for-item="u" wx:key="f" class="user-item data-v-ad16f7e5" bindtap="{{u.g}}">
+      <view class="flex-row data-v-ad16f7e5" style="align-items:center">
+        <view class="avatar-sm orange data-v-ad16f7e5">🏭</view>
+        <view class="ml-20 data-v-ad16f7e5">
+          <view class="text-bold data-v-ad16f7e5">{{u.a}}</view>
+          <view class="text-small text-gray data-v-ad16f7e5">{{u.b}} | 容量{{u.c}}吨</view>
+        </view>
+      </view>
+      <view class="{{['tag', 'data-v-ad16f7e5', u.e]}}">{{u.d}}</view>
+    </view>
+  </view>
+
+  <!-- Breeders -->
+  <view class="card fade-up data-v-ad16f7e5" style="animation-delay: 0.2s">
+    <view class="card-title data-v-ad16f7e5">🐄 养殖户</view>
+    <view wx:for="{{d}}" wx:for-item="u" wx:key="g" class="user-item data-v-ad16f7e5" bindtap="{{u.h}}">
+      <view class="flex-row data-v-ad16f7e5" style="align-items:center">
+        <view class="avatar-sm brown data-v-ad16f7e5">🐄</view>
+        <view class="ml-20 data-v-ad16f7e5">
+          <view class="text-bold data-v-ad16f7e5">{{u.a}}</view>
+          <view class="text-small text-gray data-v-ad16f7e5">{{u.b}} | {{u.c}} {{u.d}}头</view>
+        </view>
+      </view>
+      <view class="{{['tag', 'data-v-ad16f7e5', u.f]}}">{{u.e}}</view>
+    </view>
+  </view>
+
+  <!-- Footer -->
+  <view class="login-footer data-v-ad16f7e5">
+    <text class="copyright data-v-ad16f7e5">© 2026 湖南省农业农村厅 · 秸秆变肉工程</text>
+  </view>
+</view>

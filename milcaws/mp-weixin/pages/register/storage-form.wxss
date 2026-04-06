@@ -1,27 +1,4 @@
-/* ===== Driver Register Form ===== */
-.picker-popup {
-  background: #fff;
-  border: 2rpx solid #e0e0e0;
-  border-radius: 12rpx;
-  margin-top: 8rpx;
-  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.08);
-}
-
-.picker-option {
-  padding: 22rpx 24rpx;
-  border-bottom: 2rpx solid #f5f5f5;
-  font-size: 28rpx;
-  transition: background 0.2s;
-}
-
-.picker-option:last-child {
-  border-bottom: none;
-}
-
-.picker-option:active {
-  background: #e8f5e9;
-}
-
+/* ===== Storage Register Form ===== */
 .card {
   border-radius: 20rpx;
   padding: 32rpx;
